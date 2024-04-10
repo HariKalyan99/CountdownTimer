@@ -1,0 +1,116 @@
+body {
+  /* background: rgb(145,119,125);
+background: linear-gradient(98deg, rgba(145,119,125,1) 100%, rgba(249,155,0,1) 100%); */
+width: 100%;
+height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://wallpapercave.com/wp/wp3158856.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+}
+
+
+.form-input {
+  width: 230px;
+  height: 50px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: large;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.form-btn {
+  width: 120px;
+  padding: 15px;
+  margin: 20px 10px 10px 10px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: small;
+  font-weight: bold;
+  color: white;
+}
+
+.form-btn:hover {
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  box-shadow: 5px 5px 1rem rgb(255, 255, 255);
+}
+
+
+.timerCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    margin: 10px;
+}
+
+.showTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0.5rem black;
+    background: rgb(0, 5, 8);
+    color: white;
+}
+
+.showTime:hover {
+  box-shadow: 5px 5px 1rem rgb(255, 255, 255);
+}
+
+h2 {
+  text-align: center;
+}
+
+
+@media (max-width: 400px) {
+  .main{
+    background-image: url('https://w0.peakpx.com/wallpaper/1000/172/HD-wallpaper-time-is-money-time-thumbnail.jpg');
+  }
+  .showTime {
+    height: 100px;
+    width: 100px;
+  }
+
+}
