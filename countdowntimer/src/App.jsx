@@ -103,28 +103,28 @@ function App() {
       >
         <div
          className="showTime"
-         data-aos="flip-down"
+         data-aos="flip-up"
         >
           <h1>{getDays}</h1>
           <h2>Days</h2>
         </div>
         <div
           className="showTime"
-          data-aos="flip-down"
+          data-aos="flip-up"
         >
           <h1>{getHours}</h1>
           <h2>Hours</h2>
         </div>
         <div
           className="showTime"
-          data-aos="flip-down"
+          data-aos="flip-up"
         >
           <h1>{getMinutes}</h1>
           <h2>Minutes</h2>
         </div>
         <div
           className="showTime"
-          data-aos="flip-down"
+          data-aos="flip-up"
         >
           <h1>{getSeconds}</h1>
           <h2>Seconds</h2>
