@@ -105,9 +105,7 @@ h2 {
 
 
 @media (max-width: 400px) {
-  .main{
-    background-image: url('https://w0.peakpx.com/wallpaper/1000/172/HD-wallpaper-time-is-money-time-thumbnail.jpg');
-  }
+
   .showTime {
     height: 100px;
     width: 100px;
