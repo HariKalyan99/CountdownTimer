@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Timerdisplay from "./components/Timerdisplay";
 function App() {
   const [getDays, setDays] = useState("0");
   const [getHours, setHours] = useState("0");
@@ -98,39 +99,7 @@ function App() {
           <button className="form-btn" type="submit" data-aos="flip-up">{timer ? "Cancel Time" : "Start Timer"} </button>
         </div>
       </form>
-      <div 
-       className="timerCards"
-      >
-        <div
-         className="showTime"
-         data-aos="flip-up" data-aos-once
-        >
-          <h1>{getDays}</h1>
-          <h2>Days</h2>
-        </div>
-        <div
-          className="showTime"
-          data-aos="flip-up" data-aos-once
-        >
-          <h1>{getHours}</h1>
-          <h2>Hours</h2>
-        </div>
-        <div
-          className="showTime"
-          data-aos="flip-up" data-aos-once
-        >
-          <h1>{getMinutes}</h1>
-          <h2>Minutes</h2>
-        </div>
-        <div
-          className="showTime"
-          data-aos="flip-up" data-aos-once
-        >
-          <h1>{getSeconds}</h1>
-          <h2>Seconds</h2>
-        </div>
-        
-      </div>
+      <Timerdisplay getDays={getDays} getHours={getHours} getMinutes={getMinutes} getSeconds={getSeconds}/>
       <div style={{margin: "20px"}}>
       {displayExpiry ? <h2>The countdown is over! What next on your adventure?</h2> : null}
       {great100 ? <h2>Selected time is more than 100 days</h2> : null}
